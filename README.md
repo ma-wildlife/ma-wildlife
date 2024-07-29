@@ -30,7 +30,7 @@
             color: #1e90ff;
         }
         .hero {
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShqHIlA6RdbZGNIud9tLiKvnmNyExRTx6Zpw&s);
+            background-image: url(https://t4.ftcdn.net/jpg/06/38/00/39/360_F_638003971_5QST36LYf2tCF5xWcGEk9AdgXW1ie45y.jpg);
             background-size: cover;
             background-position: center;
             color: #ffffff;
@@ -44,11 +44,13 @@
         }
         .content {
             padding: 40px 20px;
-            text-align: center;
+            
+        text-align: center;
+        text-shadow: #1e90ff;
         }
         .footer {
-            background-color: #fdfafa;
-            color: #04ff58;
+            background-color: #000000;
+            color: #ffffff;
             text-align: center;
             padding: 10px;
             position: relative;
@@ -83,6 +85,52 @@
             margin: 20px 0;
             animation: slideIn 1s ease-in-out;
         }
+        @keyframes scaleUp {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.scale-up {
+    animation: scaleUp 10s ease-in;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.rotate {
+    animation: rotate 5s ;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+.bounce {
+    animation: bounce 2s ;
+}
+@keyframes flip {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(360deg); }
+}
+
+.flip {
+    animation: flip 5s ;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 10s infinite;
+}
+
+
+
+
     </style>
 </head>
 <body>
@@ -92,6 +140,7 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
+        
     </div>
 
     <div class="hero" id="home">
@@ -104,26 +153,36 @@
         <p>Hi, I'm Rafa, a passionate developer with expertise in web development and design. I love creating beautiful, functional websites that help businesses succeed online.</p>
     </div>
 
+
+
+
     <div class="content services" id="services">
         <h2>My Services</h2>
-        <div class="service-item">
+        <div class="flip">
             <h3>Web Development</h3>
             <p>Building responsive and interactive websites.</p>
         </div>
-        <div class="service-item">
+        <div class="bounce">
             <h3>UI/UX Design</h3>
             <p>Creating user-friendly interfaces and experiences.</p>
         </div>
-        <div class="service-item">
+
+        <div  class="scale-up">
+            <h3>Video Editing</h3>
+            <p>Wanna edit video in great quality?
+                Hire me 
+            </p>
+        </div>
+        <div class="rotate">
             <h3>SEO Optimization</h3>
             <p>Improving your website's visibility on search engines.</p>
         </div>
     </div>
 
-    <div class="content contact" id="contact">
+    <div class="contact" id="">
         <h2>Contact Me</h2>
         <div class="contact-item">
-            <p>Email: rafa@example.com</p>
+            <p>Email: rafakhan3433@example.com</p>
         </div>
         <div class="contact-item">
             <p>FB: <a href="https://www.facebook.com/S.F.RAFA.2008" style="color: #1e90ff;">https://www.facebook.com/S.F.RAFA.2008</a></p>
@@ -131,6 +190,10 @@
         <div class="contact-item">
             <p>Phone: 01961263433</p>
         </div>
+    </div>
+
+    <div class="contact" href="https://sites.google.com/view/lyricalhub/home">Wanna see my work?
+        Click below
     </div>
 
     <div class="footer">
